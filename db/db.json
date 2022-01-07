@@ -1,0 +1,81 @@
+{
+  "Ingredients": {
+    "breads": [
+      {
+        "id": 1,
+        "type": "Italian White"
+      },
+      {
+        "id": 2,
+        "type": "3 Cheeses"
+      },
+      {
+        "id": 3,
+        "type": "Parmesan and Oregano"
+      },
+      {
+        "id": 4,
+        "type": "Full"
+      }
+    ],
+    "meat": [
+      {
+        "id": 1,
+        "type": "Maminha"
+      },
+      {
+        "id": 2,
+        "type": "Rump"
+      },
+      {
+        "id": 3,
+        "type": "Picanha"
+      },
+      {
+        "id": 4,
+        "type": "Veggie burger"
+      }
+    ],
+    "optional": [
+      {
+        "id": 1,
+        "type": "Bacon"
+      },
+      {
+        "id": 2,
+        "type": "Cheddar"
+      },
+      {
+        "id": 3,
+        "type": "Salami"
+      },
+      {
+        "id": 4,
+        "type": "Tomato"
+      },
+      {
+        "id": 4,
+        "type": "Red onion"
+      },
+      {
+        "id": 4,
+        "type": "cucumber"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "type": "Requested"
+    },
+    {
+      "id": 2,
+      "type": "In production"
+    },
+    {
+      "id": 3,
+      "type": "Finished"
+    }
+  ],
+  "burgers": []
+}
