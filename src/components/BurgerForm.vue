@@ -2,7 +2,7 @@
   <div>
     <p>Message Component</p>
     <div>
-      <form id="burger-form">
+      <form id="burger-form" @submit="createBurger">
         <div class="input-container">
           <label for="nome">Client Name:</label>
           <input
@@ -30,7 +30,7 @@
           <select name="meat" id="meat" v-model="meat">
             <option value="">Select the meat</option>
             <option
-              v-for="meat in meat"
+              v-for="meat in meats"
               :key="meat.id"
               :value="meat.type">
                 {{ meat.type }}
@@ -67,12 +67,12 @@ export default {
   data() {
     return {
       breads: null,
-      meat: null,
+      meats: null,
       optionalsdata: null,
       name: null,
       bread: null,
+      meat: null,
       optionals: [],
-      status: 'requested',
       msg: null,
     }
   },
@@ -82,8 +82,38 @@ export default {
       const data =  await req.json();
 
       this.breads = data.breads;
-      this.meat = data.meat;
-      this.optionals = data.optionals;
+      this.meats = data.meats;
+      this.optionalsdata = data.optionals;
+    },
+
+    async createBurger(e) {
+      e.preventDefault();
+      
+      const data = {
+        name: this.name,
+        meat: this.meat,
+        bread: this.bread,
+        optionals: Array.from(this.optionals),
+        status: 'Requested'
+      }
+      const dataJson = JSON.stringify(data);
+
+      const req = await fetch("http://localhost:3000/burgers", {
+        method: "POST",
+        headers: { "Content-Type" : "application/json" },
+        body: dataJson
+      });
+
+      const res = await req. json();
+
+      // system message
+
+      // clean fiels=ds
+      this.name = '',
+      this.bread = ''
+      this.meat = ''
+      this.optionals = ''
+      // clean msg
     }
   },
   mounted() {

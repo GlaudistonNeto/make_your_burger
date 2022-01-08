@@ -18,7 +18,7 @@
         "type": "Full"
       }
     ],
-    "meat": [
+    "meats": [
       {
         "id": 1,
         "type": "Maminha"
@@ -77,5 +77,28 @@
       "type": "Finished"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "name": "Jaunzin",
+      "meat": "Picanha",
+      "bread": "3 Cheeses",
+      "optionals": [
+        "Bacon",
+        "Salami"
+      ],
+      "status": "Requested",
+      "id": 1
+    },
+    {
+      "name": "Tom-in",
+      "meat": "Maminha",
+      "bread": "Parmesan and Oregano",
+      "optionals": [
+        "Tomato",
+        "cucumber"
+      ],
+      "status": "Requested",
+      "id": 2
+    }
+  ]
 }
