@@ -1,5 +1,5 @@
 {
-  "Ingredients": {
+  "ingredients": {
     "breads": [
       {
         "id": 1,
@@ -36,7 +36,7 @@
         "type": "Veggie burger"
       }
     ],
-    "optional": [
+    "optionals": [
       {
         "id": 1,
         "type": "Bacon"
@@ -54,11 +54,11 @@
         "type": "Tomato"
       },
       {
-        "id": 4,
+        "id": 5,
         "type": "Red onion"
       },
       {
-        "id": 4,
+        "id": 6,
         "type": "cucumber"
       }
     ]
