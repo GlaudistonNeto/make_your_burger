@@ -105,8 +105,6 @@ export default {
 
       this.msg = `Order num. ${res.id} updated successfully to ${res.status}`
       setTimeout(() => this.msg = '', 3000);
-
-      console.log(res)
     }
   },
   mounted() {
