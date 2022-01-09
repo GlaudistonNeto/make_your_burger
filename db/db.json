@@ -79,26 +79,26 @@
   ],
   "burgers": [
     {
-      "name": "Jaunzin",
-      "meat": "Picanha",
-      "bread": "3 Cheeses",
-      "optionals": [
-        "Bacon",
-        "Salami"
-      ],
-      "status": "Requested",
-      "id": 1
-    },
-    {
-      "name": "Tom-in",
-      "meat": "Maminha",
+      "name": "Neildo",
+      "meat": "Veggie burger",
       "bread": "Parmesan and Oregano",
       "optionals": [
-        "Tomato",
-        "cucumber"
+        "Red onion",
+        "Tomato"
       ],
       "status": "Requested",
       "id": 2
+    },
+    {
+      "name": "Fulaniosbaldo",
+      "meat": "Rump",
+      "bread": "3 Cheeses",
+      "optionals": [
+        "Salami",
+        "cucumber"
+      ],
+      "status": "In production",
+      "id": 7
     }
   ]
 }
